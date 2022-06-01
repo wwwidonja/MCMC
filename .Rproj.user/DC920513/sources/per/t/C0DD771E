@@ -1,0 +1,26 @@
+{
+    "id": "C0DD771E",
+    "path": "X:/Faks/DS/sem4/m2-again/MCMC/HMC_banana.R",
+    "project_path": "HMC_banana.R",
+    "type": "r_source",
+    "hash": "1859279822",
+    "contents": "",
+    "dirty": true,
+    "created": 1653962906452.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "80,0",
+        "scrollLine": "60"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1653351877,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1653963779092,
+    "read_only": false,
+    "read_only_alternatives": []
+}

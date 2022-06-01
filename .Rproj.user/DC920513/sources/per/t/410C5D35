@@ -1,0 +1,27 @@
+{
+    "id": "410C5D35",
+    "path": "X:/Faks/DS/sem4/m2-again/MCMC/HW.R",
+    "project_path": "HW.R",
+    "type": "r_source",
+    "hash": "833032809",
+    "contents": "",
+    "dirty": false,
+    "created": 1653351484997.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled2",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "191,0",
+        "scrollLine": "179"
+    },
+    "folds": "10|30|13|0|\n14|56|25|0|\n26|46|44|0|\n45|35|67|0|\n68|20|108|0|\n109|21|172|0|\n193|34|224|1|\n225|41|305|74|\n",
+    "lastKnownWriteTime": 1653964076,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1653964076539,
+    "read_only": false,
+    "read_only_alternatives": []
+}
