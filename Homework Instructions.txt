@@ -1,0 +1,32 @@
+Part 3 - MCMC: Homework
+
+General:
+- Submit a pdf report (4 pages max) via email (to Erik)
+- Don't submit code but include a link to the repository in the report.
+- Deadline: 48 hours before you take the exam.
+- Grading: The homework needs to have all the required content to be considered a pass. Then -2, -1, 0, +1, or +2 to the points for this part of the course, depending on the quality of the homework. Presentation counts!
+
+Consider these 3 scenarios (distributions):
+1) A bivariate standard normal.
+2) The shape of the banana function from the examples.
+3) The shape of the logistic regression likelihood for the dataset provided in dataset.csv, but using only the first two "x" columns. Note that "X1" serves as the intercept, so don't have another in the model.
+4) Same as (3) but using all the columns.
+
+Implement:
+- Metropolis-Hastings with Multivariate Normal proposal (mean 0, covariance matrix is a parameter), 
+- HMC (step-size and number of steps are parameters; you can use unit mass matrix, but if you want to impress, you can tune the diagonal elements as well), and,
+- rejection sampling with your own choice of 2D envelope. This needn't be done for (4), because the dimensionality is too high.
+
+For each of the above scenarios:
+- Use each sampling algorithm twice - once for some quick choice of MCMC paramters and once for tuned parameters. You may tune by hand via trial and error or use some other approach.
+- For each algorithm and run, generate 5 independent chains of 1000 samples.
+- Apply standard MCMC diagnostics for each algorithm/run (traceplot for each parameter and all chains at the same time), autocovariance, ESS, and ESS/second.
+- Compare the means of the samples with the ground truth (for the bivariate normal and banana we know the true means for x and y, for the logistic regression fit a non-regularized regression with maximum-likelihood and compare sample means with MLE parameters).
+- Discuss which algorithm is the most successful in sampling from the target distribution. Include a discussion of how difficult/easy it was to tune MCMC parameters.
+
+Notes:
+* For reference, the ground truth coefficients for the logistic regression dataset are:
+ 2.00 -0.84 -0.64  0.72 -0.10 -0.85 -0.97  0.23 -0.68 -0.42  0.47
+However, the dataset is only a sample from this process, so the estimates might diffrer.
+* HMC requires gradients! For bivariate normal it is trivial (do them analytically), for the banana they are already given in the R examples code, and for logistic regression you can also do them by hand (all the parameters are symmetrical, so it is just one partial derivative).
+* The key M-H and HMC code is already available from the examples, but do study it and make sure you understand how it relates to parts of the algorithms. Also note that you only need one M-H and HMC implementation for all the scenarios. Only the parameters, the target distribution, and its gradient are different.
